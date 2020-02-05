@@ -64,7 +64,7 @@ Add additional notes about how to deploy this on a live system
 
 * **Thomas McCoy** - *Initial work and design* - [MythicAlchemist](https://github.com/MythicAlchemist)
 * **Andrew Deick** - *Initial work and design* - [adeick](https://github.com/adeick)
-* **Ben Stroup** - *Initial work and design* - [benstroup3](https://github.com/benstroup3)
+* **Ben Stroup** - *Initial work and design* - [benstroup3](https://github.com/bstroup3)
 * **Sam Kiecker** - *Initial work and design* - [Samkiecker](https://github.com/Samkiecker)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
