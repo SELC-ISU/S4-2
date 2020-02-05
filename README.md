@@ -67,7 +67,7 @@ Add additional notes about how to deploy this on a live system
 * **Ben Stroup** - *Initial work and design* - [benstroup3](https://github.com/bstroup3)
 * **Sam Kiecker** - *Initial work and design* - [Samkiecker](https://github.com/Samkiecker)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/SELC-ISU/Unity-Project---STAB/graphs/contributors) who participated in this project.
 
 ## Acknowledgments
 
