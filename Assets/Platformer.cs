@@ -17,6 +17,7 @@ public class Platformer : MonoBehaviour
         if(Input.GetButtonDown("Jump") || Input.GetAxis("Vertical") > 0){
             anim.SetTrigger("jump");
             anim.SetBool("crouch", false);
+            Invoke("ResetJump", 0.1f);
         }
         else if (Input.GetAxis("Vertical") < 0){
             anim.SetBool("crouch", true);
@@ -38,4 +39,7 @@ public class Platformer : MonoBehaviour
             anim.SetBool("back", false);
         }
     }
+public void ResetJump(){
+    anim.ResetTrigger("jump");
+}
 }
