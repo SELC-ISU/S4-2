@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class CubeMove : MonoBehaviour
 {
-    [SerializeField] float rotationalThrust = 300f;
-    [SerializeField] float thrust = 300f;
+    [SerializeField] float rotationalThrust = 30;
+    [SerializeField] float thrust = 5;
+    [SerializeField] float jumpPower = 15;
     Rigidbody rigidBody;
 
     // Start is called before the first frame update
@@ -19,14 +20,18 @@ public class CubeMove : MonoBehaviour
     {
         if(Input.GetAxis("Horizontal") > 0){
             float rotationThisFrame = rotationalThrust * Time.deltaTime;
-            //transform.Rotate(Vector3.right * -rotationThisFrame);
+            transform.Rotate(Vector3.right * -rotationThisFrame);
             rigidBody.AddForce(Vector3.back * thrust);
 
         }
         else if(Input.GetAxis("Horizontal") < 0){
             float rotationThisFrame = rotationalThrust * Time.deltaTime;
-            //transform.Rotate(Vector3.left * -rotationThisFrame);
+            transform.Rotate(Vector3.left * -rotationThisFrame);
             rigidBody.AddForce(Vector3.forward * thrust);
+        }
+        else if(Input.GetAxis("Vertical") > 0){
+            float rotationThisFrame = rotationalThrust * Time.deltaTime;
+            rigidBody.AddForce(Vector3.up * jumpPower);
         }
     }
 }
