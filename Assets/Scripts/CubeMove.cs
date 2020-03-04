@@ -20,28 +20,24 @@ public class CubeMove : MonoBehaviour
     void Update()
     {
         if(Input.GetAxis("Horizontal") > 0){
-            float rotationThisFrame = rotationalThrust * Time.deltaTime;
-            transform.Rotate(Vector3.right * -rotationThisFrame);
+            if(rigidBody.velocity.z > -10);{
+            // float rotationThisFrame = rotationalThrust * Time.deltaTime;
+            // transform.Rotate(Vector3.right * -rotationThisFrame);
             rigidBody.AddForce(Vector3.back * thrust);
-
+            }
         }
         else if(Input.GetAxis("Horizontal") < 0){
-            float rotationThisFrame = rotationalThrust * Time.deltaTime;
-            transform.Rotate(Vector3.left * -rotationThisFrame);
+            if(rigidBody.velocity.z < 10){
+            // float rotationThisFrame = rotationalThrust * Time.deltaTime;
+            // transform.Rotate(Vector3.right * rotationThisFrame);
             rigidBody.AddForce(Vector3.forward * thrust);
+            }
         }
         if (Input.GetButtonDown("Jump") && canJump)
         {
             float rotationThisFrame = rotationalThrust * Time.deltaTime;
             rigidBody.AddForce(Vector3.up * jumpPower);
             canJump = false;
-        }
-        else if (Input.GetAxis("Vertical") < 0)
-        {
-            rigidBody.mass = 10;
-        }
-        else{
-            rigidBody.mass = 1;
         }
     }
 

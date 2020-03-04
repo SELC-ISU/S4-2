@@ -15,6 +15,9 @@ public class CubeTracker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cameraTransform.position = new Vector3(cameraTransform.position.x , cameraTransform.position.y, trackedObject.transform.position.z);
+        if(trackedObject != null){
+            cameraTransform.position = new Vector3(cameraTransform.position.x , cameraTransform.position.y, trackedObject.transform.position.z);
+        }
+        
     }
 }

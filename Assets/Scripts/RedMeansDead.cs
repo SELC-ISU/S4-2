@@ -10,7 +10,7 @@ public class RedMeansDead : MonoBehaviour
     void OnTriggerEnter(Collider other){
 
         if (other.CompareTag("Player")){
-            Destroy(objToDestroy);
+            Debug.Log("Destroy(objToDestroy);");
         }
     }
 }
