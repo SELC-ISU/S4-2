@@ -643,6 +643,7 @@ GameObject:
   - component: {fileID: 1545538765}
   - component: {fileID: 1545538764}
   - component: {fileID: 1545538763}
+  - component: {fileID: 1545538767}
   m_Layer: 0
   m_Name: GameHazard1-2
   m_TagString: Untagged
@@ -740,6 +741,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1545538761}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1545538767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545538761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f24c7773e42b60245ad44fd1a1644237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objToDestroy: {fileID: 0}
 --- !u!1 &1751468524
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,6 +1288,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851425962}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1952377716 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1515530917896069282, guid: 5d9ddb3e2277d9042a9860ed23f0c806,
+    type: 3}
+  m_PrefabInstance: {fileID: 1515530917891105053}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1952377717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952377716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f24c7773e42b60245ad44fd1a1644237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objToDestroy: {fileID: 0}
 --- !u!1 &2004997730
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,6 +1320,7 @@ GameObject:
   - component: {fileID: 2004997734}
   - component: {fileID: 2004997733}
   - component: {fileID: 2004997732}
+  - component: {fileID: 2004997736}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -1320,7 +1354,7 @@ Rigidbody:
   m_Drag: 2
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 118
   m_CollisionDetection: 0
@@ -1384,6 +1418,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2004997730}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2004997736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004997730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f24c7773e42b60245ad44fd1a1644237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objToDestroy: {fileID: 8427258493181832264}
 --- !u!1001 &1515530917891105053
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1603,6 +1650,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube-Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8427258492863866402, guid: 2c6a456eced11fc4198d46ff9289ffe4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8427258492863866413, guid: 2c6a456eced11fc4198d46ff9289ffe4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1660,6 +1712,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c6a456eced11fc4198d46ff9289ffe4, type: 3}
+--- !u!1 &8427258493181832264 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8427258492863866402, guid: 2c6a456eced11fc4198d46ff9289ffe4,
+    type: 3}
+  m_PrefabInstance: {fileID: 8427258493181832263}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8822628209553817326
 PrefabInstance:
   m_ObjectHideFlags: 0
