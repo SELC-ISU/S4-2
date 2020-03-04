@@ -8,6 +8,7 @@ public class CubeMove : MonoBehaviour
     [SerializeField] float thrust = 5;
     [SerializeField] float jumpPower = 15;
     Rigidbody rigidBody;
+    private bool canJump = true;
 
     // Start is called before the first frame update
     void Start()
@@ -29,9 +30,22 @@ public class CubeMove : MonoBehaviour
             transform.Rotate(Vector3.left * -rotationThisFrame);
             rigidBody.AddForce(Vector3.forward * thrust);
         }
-        else if(Input.GetAxis("Vertical") > 0){
+        if (Input.GetButtonDown("Jump") && canJump)
+        {
             float rotationThisFrame = rotationalThrust * Time.deltaTime;
             rigidBody.AddForce(Vector3.up * jumpPower);
+            canJump = false;
         }
+        else if (Input.GetAxis("Vertical") < 0)
+        {
+            rigidBody.mass = 10;
+        }
+        else{
+            rigidBody.mass = 1;
+        }
+    }
+
+    void OnCollisionEnter(Collision collision){
+        canJump = true;
     }
 }
