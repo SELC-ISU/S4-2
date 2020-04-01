@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class RedMeansDead : MonoBehaviour
 {
@@ -10,7 +12,10 @@ public class RedMeansDead : MonoBehaviour
     void OnTriggerEnter(Collider other){
 
         if (other.CompareTag("Player")){
-            Destroy(objToDestroy);
+            //Destroy(objToDestroy);
+            //reload scene
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
         }
     }
 }
