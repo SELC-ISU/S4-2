@@ -11,7 +11,6 @@ These instructions will get you a copy of the project up and running on your loc
 A step by step series of examples that tell you how to get our game running.
 
 Step 1:
-
 Download Unity Version 2019.3.1f1
 
 Step 2:
