@@ -549,6 +549,7 @@ GameObject:
   - component: {fileID: 970854600}
   - component: {fileID: 970854599}
   - component: {fileID: 970854598}
+  - component: {fileID: 970854602}
   m_Layer: 0
   m_Name: FinishFlag
   m_TagString: Untagged
@@ -564,7 +565,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970854597}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -630,6 +631,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &970854602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970854597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7cbba53ba17d3042889258653c2cf3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1008803970
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1333,6 +1346,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AngularDrag
       value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 8427258492863866412, guid: 2c6a456eced11fc4198d46ff9289ffe4,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8427258492863866413, guid: 2c6a456eced11fc4198d46ff9289ffe4,
         type: 3}
