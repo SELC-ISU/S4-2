@@ -6,31 +6,24 @@ Our SE 186X project that's goal is to create a 3D first person shooter that incl
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+A step by step series of examples that tell you how to get our game running.
 
-Say what the step will be
+Step 1:
 
-```
-Give the example
-```
+Download Unity Version 2019.3.1f1
 
-And repeat
+Step 2:
+Download Visual Studios
 
-```
-until finished
-```
+Step 3:
+Clone the Repoository.
 
-End with an example of getting some data out of the system or using it for a little demo
+Step 4:
+Add the project to Unity under the correct version.
+
+If you did everything correctly, you should be able to open the project in Unity.
 
 ## Running the tests
 
