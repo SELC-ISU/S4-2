@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Introduction.unity
+    guid: 1130e2abe322ad24a89d2ba32fbc63bb
+  - enabled: 1
     path: Assets/Scenes/Parkour.unity
     guid: 7b4353444363cfd438a01f3344f1f20f
   - enabled: 1
