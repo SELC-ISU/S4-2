@@ -336,8 +336,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186938861}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.729254, y: 1.8, z: -1.3}
-  m_LocalScale: {x: 5, y: 4, z: 9}
+  m_LocalPosition: {x: -20.729254, y: 1.51, z: -1.3}
+  m_LocalScale: {x: 5, y: 3.5, z: 9}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -1163,6 +1163,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube-Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7111342696982341077, guid: db5820709af44ef4ca7fcb8bfa9fcf19,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 98
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db5820709af44ef4ca7fcb8bfa9fcf19, type: 3}
 --- !u!1 &1811978080
@@ -1270,7 +1275,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1811978080}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.81, y: 1.01, z: -2.39}
+  m_LocalPosition: {x: -26.81, y: 0.9, z: -2.39}
   m_LocalScale: {x: 3, y: 0.5, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1353,7 +1358,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983571494}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.8, y: 9.3, z: -37.5}
+  m_LocalPosition: {x: -9.8, y: 9.3, z: -40.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
