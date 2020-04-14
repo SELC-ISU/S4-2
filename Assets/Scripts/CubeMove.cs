@@ -20,7 +20,7 @@ public class CubeMove : MonoBehaviour
     void Update()
     {
         if(Input.GetAxis("Horizontal") > 0){
-            if(rigidBody.velocity.z > -10){
+            if(rigidBody.velocity.x > -10){
             // float rotationThisFrame = rotationalThrust * Time.deltaTime;
             // transform.Rotate(Vector3.right * -rotationThisFrame);
             rigidBody.AddForce(Vector3.back * thrust);
