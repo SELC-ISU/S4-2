@@ -1083,12 +1083,17 @@ PrefabInstance:
     - target: {fileID: 7111342696982341078, guid: db5820709af44ef4ca7fcb8bfa9fcf19,
         type: 3}
       propertyPath: rotationalThrust
-      value: 40
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7111342696982341078, guid: db5820709af44ef4ca7fcb8bfa9fcf19,
         type: 3}
       propertyPath: thrust
-      value: 40
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7111342696982341078, guid: db5820709af44ef4ca7fcb8bfa9fcf19,
+        type: 3}
+      propertyPath: jumpPower
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db5820709af44ef4ca7fcb8bfa9fcf19, type: 3}
