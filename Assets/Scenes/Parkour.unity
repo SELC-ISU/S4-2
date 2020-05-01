@@ -633,7 +633,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.666e-42, y: 1.04e-43, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 1.57e-43, z: 0, w: 4.633213}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -2232,12 +2232,12 @@ PrefabInstance:
     - target: {fileID: 7111342696982341078, guid: db5820709af44ef4ca7fcb8bfa9fcf19,
         type: 3}
       propertyPath: thrust
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7111342696982341078, guid: db5820709af44ef4ca7fcb8bfa9fcf19,
         type: 3}
       propertyPath: rotationalThrust
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db5820709af44ef4ca7fcb8bfa9fcf19, type: 3}
